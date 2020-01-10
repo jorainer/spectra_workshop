@@ -1,0 +1,63 @@
+#+SETUPFILE: orgsetup.org
+
+* =Spectra=
+
+** Import data from an /mzML/ file
+
+- Load mzML data.
+- =Spectra=: a list of MS spectra.
+- /spectra variables/: values characterizing an MS spectrum
+  - m/z and intensity values
+  - MS level
+  - retention time
+  - precursor m/z
+  - ...
+- How to access spectra variables:
+- Add new spectra variables:
+- Drop/delete spectra variables
+
+** The concept of the =MsBackend=
+
+- =MsBackend=: stores and provides the spectrum data.
+- =MsBackendMzR=: what data is actually stored?
+- Change backend to =MsBackendDataFrame=.
+- All data is in memory.
+- Advantage of this?
+  - Can have backends for each data type or resource.
+
+** =MsBackendHmdb=: import data from HMDB
+
+- Human metabolome database: MS2 spectra available as individual xml file.
+- =MsBackendHmdbXml=: reads data from xml.
+- Load the HMDB data.
+- Cheating: load pre-read object.
+
+** Match experimental spectrum against HMDB
+
+- Cheating: subset HMDB...
+
+
+** The future
+
+- Slowly replace =MSnbase= with the new packages.
+- Slowly integrate =Spectra=, =Chromatograms= into =xcms=.
+- New packages should open up possibilities for MS data analysis - specifically
+  aid annotation/identification.
+
+** Opportunities
+
+- We're open for contributions!
+
+*** Implement own backends
+
+- [ ] Backend to read/write /mgf/ files (Michael Witting).
+- [ ] Backend to read/write MassBank files (Michael Witting, Emma Schymanski?).
+
+*** Plotting functionality
+
+- [ ] plotting functions for =Spectra= objects (base R graphics).
+- [ ] ggplot-based plotting should ideally go into a separate package.
+
+*** Integrate new packages in your own workflow/software
+
+I'd suggest you switch sooner than later.

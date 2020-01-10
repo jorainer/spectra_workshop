@@ -1,4 +1,4 @@
-# RforMassSpectrometry workshop
+# RforMassSpectrometry/Spectra workshop
 
 *Presenter*: Johannes Rainer, Institute for Biomedicine, Eurac Research,
 Bolzano, Italy.
