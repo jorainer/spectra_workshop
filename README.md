@@ -14,6 +14,14 @@ The workshop provides background information on the new mass spectrometry
 infrastructure and shows its usage on the example of matching an experimental
 MS2 spectrum against a MS2 library.
 
+- static presentation:
+  [spectra_workshop_static.Rmd](spectra_workshop_static.Rmd), [html
+  view](https://jorainer.github.io/spectra_workshop/spectra_workshop_static.html).
+  
+- interactive presentation:
+  [spectra_workshop_interactive.org](spectra_workshop_interactive.org).
+  
+
 ## Main topics
 
 - What is [RforMassSpectrometry](https://www.rformassspectrometry.org/)?
