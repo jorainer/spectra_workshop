@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>635885</id>
+  <notes>Predicted by CFM-ID</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type nil="true"/>
+  <peak-counter>1</peak-counter>
+  <created-at>2017-10-04T18:27:22Z</created-at>
+  <updated-at>2017-10-18T12:31:16Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level>med</collision-energy-level>
+  <collision-energy-voltage>20</collision-energy-voltage>
+  <ionization-mode>Positive</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>true</predicted>
+  <structure-id>635651</structure-id>
+  <splash-key>splash10-000i-0000000009-c7def20008fec39c2a2b</splash-key>
+  <database-id>HMDB0107551</database-id>
+  <references>
+    <reference>
+      <id>439188</id>
+      <spectra-id>635885</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>Allen F, Greiner R, Wishart D: Competitive fragmentation modeling of ESI-MS/MS spectra for putative metabolite identification. Metabolomics. 2015 11(1):98–110. doi: 10.1007/s11306-014-0676-4.</ref-text>
+      <database nil="true"/>
+      <database-id nil="true"/>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>21496425</id>
+      <ms-ms-id>635885</ms-ms-id>
+      <mass-charge>936.89591</mass-charge>
+      <intensity>100.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

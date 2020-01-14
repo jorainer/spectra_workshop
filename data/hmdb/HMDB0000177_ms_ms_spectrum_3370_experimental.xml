@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>3370</id>
+  <notes nil="true"/>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type>LC-ESI-QQ (API3000, Applied Biosystems)</instrument-type>
+  <peak-counter>11</peak-counter>
+  <created-at>2012-08-31T15:01:29Z</created-at>
+  <updated-at>2016-05-12T14:16:14Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level nil="true"/>
+  <collision-energy-voltage>40</collision-energy-voltage>
+  <ionization-mode>Negative</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>false</predicted>
+  <structure-id>5108</structure-id>
+  <splash-key>splash10-00l6-9000000000-ebf778679d4c6d6a6057</splash-key>
+  <database-id>HMDB0000177</database-id>
+  <references>
+    <reference>
+      <id>5572</id>
+      <spectra-id>3370</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id>20623627</pubmed-id>
+      <ref-text>Horai H, Arita M, Kanaya S, Nihei Y, Ikeda T, Suwa K, Ojima Y, Tanaka K, Tanaka S, Aoshima K, Oda Y, Kakazu Y, Kusano M, Tohge T, Matsuda F, Sawada Y, Hirai MY, Nakanishi H, Ikeda K, Akimoto N, Maoka T, Takahashi H, Ara T, Sakurai N, Suzuki H, Shibata D, Neumann S, Iida T, Tanaka K, Funatsu K, Matsuura F, Soga T, Taguchi R, Saito K, Nishioka T: MassBank: a public repository for sharing mass spectral data for life sciences. J Mass Spectrom. 2010 Jul;45(7):703-14. doi: 10.1002/jms.1777.</ref-text>
+      <database>MassBank</database>
+      <database-id>KO000961</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>317182</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>66.1</mass-charge>
+      <intensity>0.1451451451</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317183</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>67.1</mass-charge>
+      <intensity>0.4174174174</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317184</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>71.9</mass-charge>
+      <intensity>0.1091091091</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317185</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>74.2</mass-charge>
+      <intensity>0.034034034</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317186</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>79.0</mass-charge>
+      <intensity>0.017017017</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317187</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>80.0</mass-charge>
+      <intensity>0.3353353353</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317188</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>81.1</mass-charge>
+      <intensity>0.2672672673</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317189</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>91.8</mass-charge>
+      <intensity>0.017017017</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317190</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>93.1</mass-charge>
+      <intensity>1.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317191</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>110.4</mass-charge>
+      <intensity>0.027027027</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>317192</id>
+      <ms-ms-id>3370</ms-ms-id>
+      <mass-charge>118.1</mass-charge>
+      <intensity>0.015015015</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>442344</id>
+  <notes>instrument=LTQ Orbitrap XL Thermo Scientific</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type>LC-ESI-ITFT</instrument-type>
+  <peak-counter>2</peak-counter>
+  <created-at>2017-09-14T17:52:53Z</created-at>
+  <updated-at>2017-09-14T17:52:53Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level nil="true"/>
+  <collision-energy-voltage nil="true"/>
+  <ionization-mode>positive</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>false</predicted>
+  <structure-id>162345</structure-id>
+  <splash-key>splash10-00di-0090000000-e7f25e818947f99330e8</splash-key>
+  <database-id>HMDB0042008</database-id>
+  <references>
+    <reference>
+      <id>36904</id>
+      <spectra-id>442344</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>http://www.massbank.jp/jsp/FwdRecord.jsp?id=EA070108</ref-text>
+      <database>MoNA</database>
+      <database-id>EA070108</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>17954311</id>
+      <ms-ms-id>442344</ms-ms-id>
+      <mass-charge>84.0808</mass-charge>
+      <intensity>2.785663</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17954312</id>
+      <ms-ms-id>442344</ms-ms-id>
+      <mass-charge>220.1334</mass-charge>
+      <intensity>100.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

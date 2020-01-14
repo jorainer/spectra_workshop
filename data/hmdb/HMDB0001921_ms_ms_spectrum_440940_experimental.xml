@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>440940</id>
+  <notes>instrument=Bruker maXis Impact</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type>LC-ESI-QTOF</instrument-type>
+  <peak-counter>2</peak-counter>
+  <created-at>2017-09-14T17:49:47Z</created-at>
+  <updated-at>2017-09-14T17:49:47Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level nil="true"/>
+  <collision-energy-voltage nil="true"/>
+  <ionization-mode>positive</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>false</predicted>
+  <structure-id>5319</structure-id>
+  <splash-key>splash10-001i-0900000000-0fa445716bfc24131a75</splash-key>
+  <database-id>HMDB0001921</database-id>
+  <references>
+    <reference>
+      <id>35500</id>
+      <spectra-id>440940</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>http://www.massbank.jp/jsp/FwdRecord.jsp?id=AU112703</ref-text>
+      <database>MoNA</database>
+      <database-id>AU112703</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>17926059</id>
+      <ms-ms-id>440940</ms-ms-id>
+      <mass-charge>113.0818</mass-charge>
+      <intensity>1.145634</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17926060</id>
+      <ms-ms-id>440940</ms-ms-id>
+      <mass-charge>130.1079</mass-charge>
+      <intensity>100.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>443308</id>
+  <notes>instrument=LTQ Orbitrap XL Thermo Scientific</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type>LC-ESI-ITFT</instrument-type>
+  <peak-counter>9</peak-counter>
+  <created-at>2017-09-14T17:55:05Z</created-at>
+  <updated-at>2017-09-14T17:55:05Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level nil="true"/>
+  <collision-energy-voltage nil="true"/>
+  <ionization-mode>positive</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>false</predicted>
+  <structure-id>19360</structure-id>
+  <splash-key>splash10-05g0-9000000000-c800429b256376d754ae</splash-key>
+  <database-id>HMDB0031804</database-id>
+  <references>
+    <reference>
+      <id>37868</id>
+      <spectra-id>443308</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>http://www.massbank.jp/jsp/FwdRecord.jsp?id=EA294213</ref-text>
+      <database>MoNA</database>
+      <database-id>EA294213</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>17974478</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>56.0494</mass-charge>
+      <intensity>9.336662</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974479</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>57.0698</mass-charge>
+      <intensity>0.971596</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974480</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>58.0287</mass-charge>
+      <intensity>29.125125</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974481</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>61.0106</mass-charge>
+      <intensity>6.62537</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974482</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>65.0057</mass-charge>
+      <intensity>2.050487</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974483</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>71.9902</mass-charge>
+      <intensity>7.155101</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974484</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>72.998</mass-charge>
+      <intensity>100.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974485</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>88.0215</mass-charge>
+      <intensity>90.948938</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17974486</id>
+      <ms-ms-id>443308</ms-ms-id>
+      <mass-charge>106.032</mass-charge>
+      <intensity>27.328846</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

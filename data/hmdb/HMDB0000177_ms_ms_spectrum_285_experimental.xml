@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>285</id>
+  <notes>delivery=Flow_Injection
+analyzer=Triple_Quad</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass>1.0</sample-mass>
+  <sample-assessment>Excellent</sample-assessment>
+  <spectra-assessment>Excellent</spectra-assessment>
+  <sample-source nil="true"/>
+  <collection-date>2006-12-25</collection-date>
+  <instrument-type>Quattro_QQQ</instrument-type>
+  <peak-counter>18</peak-counter>
+  <created-at>2012-07-24T19:35:38Z</created-at>
+  <updated-at>2016-05-12T04:27:00Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level>high</collision-energy-level>
+  <collision-energy-voltage>40</collision-energy-voltage>
+  <ionization-mode>Positive</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units>mg</sample-mass-units>
+  <predicted>false</predicted>
+  <structure-id>5108</structure-id>
+  <splash-key>splash10-053r-9000000000-61a3602d80bc0d54c579</splash-key>
+  <database-id>HMDB0000177</database-id>
+  <references>
+    <reference>
+      <id>285</id>
+      <spectra-id>285</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id>18953024</pubmed-id>
+      <ref-text>Wishart DS, Knox C, Guo AC, Eisner R, Young N, Gautam B, Hau DD, Psychogios N, Dong E, Bouatra S, Mandal R, Sinelnikov I, Xia J, Jia L, Cruz JA, Lim E, Sobsey CA, Shrivastava S, Huang P, Liu P, Fang L, Peng J, Fradette R, Cheng D, Tzur D, Clements M, Lewis A, De Souza A, Zuniga A, Dawe M, Xiong Y, Clive D, Greiner R, Nazyrova A, Shaykhutdinov R, Li L, Vogel HJ, Forsythe I: HMDB: a knowledgebase for the human metabolome. Nucleic Acids Res. 2009 Jan;37(Database issue):D603-10. doi: 10.1093/nar/gkn810. Epub 2008 Oct 25.</ref-text>
+      <database>HMDB</database>
+      <database-id>HMDB00177</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>30200</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>41.32</mass-charge>
+      <intensity>13.043</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30203</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>54.228</mass-charge>
+      <intensity>21.957</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30204</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>56.008</mass-charge>
+      <intensity>100.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30205</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>66.115</mass-charge>
+      <intensity>27.065</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30206</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>68.121</mass-charge>
+      <intensity>10.652</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30208</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>81.1</mass-charge>
+      <intensity>81.304</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30209</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>82.24</mass-charge>
+      <intensity>91.739</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30210</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>83.231</mass-charge>
+      <intensity>46.522</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30211</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>92.988</mass-charge>
+      <intensity>31.739</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30213</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>109.834</mass-charge>
+      <intensity>31.304</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>30216</id>
+      <ms-ms-id>285</ms-ms-id>
+      <mass-charge>155.786</mass-charge>
+      <intensity>8.152</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

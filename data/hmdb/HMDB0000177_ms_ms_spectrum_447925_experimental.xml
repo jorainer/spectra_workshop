@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>447925</id>
+  <notes>instrument=UPLC Q-Tof Premier, Waters</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type>LC-ESI-QTOF</instrument-type>
+  <peak-counter>3</peak-counter>
+  <created-at>2017-09-14T18:13:28Z</created-at>
+  <updated-at>2017-09-14T18:13:28Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level nil="true"/>
+  <collision-energy-voltage nil="true"/>
+  <ionization-mode>positive</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>false</predicted>
+  <structure-id>5108</structure-id>
+  <splash-key>splash10-0a4i-0900000000-23a17624cb20e8b396c8</splash-key>
+  <database-id>HMDB0000177</database-id>
+  <references>
+    <reference>
+      <id>42485</id>
+      <spectra-id>447925</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>http://www.massbank.jp/jsp/FwdRecord.jsp?id=PR100028</ref-text>
+      <database>MoNA</database>
+      <database-id>PR100028</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>18146890</id>
+      <ms-ms-id>447925</ms-ms-id>
+      <mass-charge>83.0618</mass-charge>
+      <intensity>2.097</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>18146891</id>
+      <ms-ms-id>447925</ms-ms-id>
+      <mass-charge>110.0706</mass-charge>
+      <intensity>4.908</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>18146892</id>
+      <ms-ms-id>447925</ms-ms-id>
+      <mass-charge>156.0772</mass-charge>
+      <intensity>16.3</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

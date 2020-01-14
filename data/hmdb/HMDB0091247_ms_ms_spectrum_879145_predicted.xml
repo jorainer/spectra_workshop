@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>879145</id>
+  <notes>Predicted by CFM-ID</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type nil="true"/>
+  <peak-counter>5</peak-counter>
+  <created-at>2017-10-05T21:50:57Z</created-at>
+  <updated-at>2017-10-18T20:17:35Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level>low</collision-energy-level>
+  <collision-energy-voltage>10</collision-energy-voltage>
+  <ionization-mode>Negative</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>true</predicted>
+  <structure-id>607508</structure-id>
+  <splash-key>splash10-0002-0041009000-5ba68f3dffbef695d375</splash-key>
+  <database-id>HMDB0091247</database-id>
+  <references>
+    <reference>
+      <id>586154</id>
+      <spectra-id>879145</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>Allen F, Greiner R, Wishart D: Competitive fragmentation modeling of ESI-MS/MS spectra for putative metabolite identification. Metabolomics. 2015 11(1):98–110. doi: 10.1007/s11306-014-0676-4.</ref-text>
+      <database nil="true"/>
+      <database-id nil="true"/>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>23107559</id>
+      <ms-ms-id>879145</ms-ms-id>
+      <mass-charge>696.50176</mass-charge>
+      <intensity>90.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>23107560</id>
+      <ms-ms-id>879145</ms-ms-id>
+      <mass-charge>381.37325</mass-charge>
+      <intensity>15.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>23107561</id>
+      <ms-ms-id>879145</ms-ms-id>
+      <mass-charge>241.21675</mass-charge>
+      <intensity>15.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>23107562</id>
+      <ms-ms-id>879145</ms-ms-id>
+      <mass-charge>227.2011</mass-charge>
+      <intensity>15.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>23107563</id>
+      <ms-ms-id>879145</ms-ms-id>
+      <mass-charge>213.18545</mass-charge>
+      <intensity>15.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

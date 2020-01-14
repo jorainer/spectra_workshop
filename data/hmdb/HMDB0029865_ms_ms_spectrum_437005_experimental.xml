@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>437005</id>
+  <notes>instrument=maXis (Bruker Daltonics)</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type>LC-ESI-QTOF</instrument-type>
+  <peak-counter>13</peak-counter>
+  <created-at>2017-09-14T17:41:23Z</created-at>
+  <updated-at>2017-09-14T17:41:23Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level nil="true"/>
+  <collision-energy-voltage nil="true"/>
+  <ionization-mode>negative</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>false</predicted>
+  <structure-id>33258</structure-id>
+  <splash-key>splash10-01q9-0900000000-0a23407c9d3acb3a9646</splash-key>
+  <database-id>HMDB0029865</database-id>
+  <references>
+    <reference>
+      <id>31565</id>
+      <spectra-id>437005</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>http://www.massbank.jp/jsp/FwdRecord.jsp?id=FIO00500</ref-text>
+      <database>MoNA</database>
+      <database-id>FIO00500</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>17849057</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>89.0402</mass-charge>
+      <intensity>8.806225</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849058</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>91.0198</mass-charge>
+      <intensity>1.100778</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849059</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>95.0506</mass-charge>
+      <intensity>9.271209</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849060</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>105.0351</mass-charge>
+      <intensity>11.472765</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849061</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>117.0347</mass-charge>
+      <intensity>12.896185</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849062</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>118.0379</mass-charge>
+      <intensity>1.119757</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849063</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>119.0137</mass-charge>
+      <intensity>1.138736</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849064</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>123.0452</mass-charge>
+      <intensity>36.287721</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849065</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>124.0485</mass-charge>
+      <intensity>3.359271</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849066</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>133.0296</mass-charge>
+      <intensity>100.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849067</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>134.0329</mass-charge>
+      <intensity>9.688745</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849068</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>161.0248</mass-charge>
+      <intensity>71.265895</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17849069</id>
+      <ms-ms-id>437005</ms-ms-id>
+      <mass-charge>162.0283</mass-charge>
+      <intensity>7.316379</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>

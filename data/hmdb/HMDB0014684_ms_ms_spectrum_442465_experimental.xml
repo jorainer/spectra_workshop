@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ms-ms>
+  <id>442465</id>
+  <notes>instrument=LTQ Orbitrap XL Thermo Scientific</notes>
+  <sample-concentration nil="true"/>
+  <solvent nil="true"/>
+  <sample-mass nil="true"/>
+  <sample-assessment nil="true"/>
+  <spectra-assessment nil="true"/>
+  <sample-source nil="true"/>
+  <collection-date nil="true"/>
+  <instrument-type>LC-ESI-ITFT</instrument-type>
+  <peak-counter>4</peak-counter>
+  <created-at>2017-09-14T17:53:04Z</created-at>
+  <updated-at>2017-09-14T17:53:04Z</updated-at>
+  <mono-mass nil="true"/>
+  <energy-field nil="true"/>
+  <collision-energy-level nil="true"/>
+  <collision-energy-voltage nil="true"/>
+  <ionization-mode>positive</ionization-mode>
+  <sample-concentration-units nil="true"/>
+  <sample-mass-units nil="true"/>
+  <predicted>false</predicted>
+  <structure-id>5531</structure-id>
+  <splash-key>splash10-001i-1900000000-0c0ee9469bf49688c5d2</splash-key>
+  <database-id>HMDB0014684</database-id>
+  <references>
+    <reference>
+      <id>37025</id>
+      <spectra-id>442465</spectra-id>
+      <spectra-type>MsMs</spectra-type>
+      <pubmed-id nil="true"/>
+      <ref-text>http://www.massbank.jp/jsp/FwdRecord.jsp?id=EA256603</ref-text>
+      <database>MoNA</database>
+      <database-id>EA256603</database-id>
+    </reference>
+  </references>
+  <ms-ms-peaks>
+    <ms-ms-peak>
+      <id>17955884</id>
+      <ms-ms-id>442465</ms-ms-id>
+      <mass-charge>84.9597</mass-charge>
+      <intensity>13.723976</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17955885</id>
+      <ms-ms-id>442465</ms-ms-id>
+      <mass-charge>88.0189</mass-charge>
+      <intensity>0.230962</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17955886</id>
+      <ms-ms-id>442465</ms-ms-id>
+      <mass-charge>113.9985</mass-charge>
+      <intensity>4.029461</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+    <ms-ms-peak>
+      <id>17955887</id>
+      <ms-ms-id>442465</ms-ms-id>
+      <mass-charge>131.025</mass-charge>
+      <intensity>100.0</intensity>
+      <molecule-id nil="true"/>
+    </ms-ms-peak>
+  </ms-ms-peaks>
+</ms-ms>
