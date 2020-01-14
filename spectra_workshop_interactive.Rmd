@@ -1,0 +1,215 @@
+---
+title: "Spectra use case"
+author: 
+- name: "Johannes Rainer"
+  affiliation: "Eurac Research, Bolzano, Italy; johannes.rainer@eurac.edu github: jorainer twitter: jo_rainer"
+graphics: yes
+output:
+  BiocStyle::html_document:
+    number_sections: true
+    toc_float: true
+    toc_depth: 2
+---
+
+```{r style, message = FALSE, echo = FALSE, warning = FALSE, results = "asis"}
+library("BiocStyle")
+library("knitr")
+library("rmarkdown")
+opts_chunk$set(message = FALSE, error = FALSE, warning = FALSE,
+               cache = FALSE, fig.width = 7, fig.height = 7) 
+```
+
+
+# `Spectra`
+
+-   Example use cases for the `Spectra` package and functionality.
+
+## Import data from an *mzML* file
+
+- What is a `Spectra` object?
+- *Example*: Load an mzML from an LC-MS/MS (DDA) experiment.
+```{r}
+library(Spectra)
+library(magrittr)
+    
+sps <- Spectra("data/20191107_Mix2_CE20.mzML", backend = MsBackendMzR())
+sps
+
+## How many spectra?
+length(sps)
+```
+
+- `Spectra`: a list of MS spectra.
+- *spectra variables*: values characterizing an MS spectrum
+  - m/z and intensity values
+  - MS level
+  - retention time
+    - precursor m/z
+    - ...
+- *Example*: access spectra variables:
+```{r}
+## Using accessor method
+msLevel(sps)
+    
+## Easier: with $
+sps$msLevel
+    
+## How many MS 1 and MS 2 spectra?
+table(sps$msLevel)    
+    
+## m/z and intensity values
+sps$mz
+sps$intensity
+    
+## What variables do we have?
+spectraVariables(sps)
+```
+
+- *Example*: add new spectra variables:
+```{r}
+sps$new_variable <- "A"
+
+sps$new_variable
+```
+
+- *Example*: subset a `Spectra` object:
+```{r}
+## get all MS level 2 spectra
+ms2 <- filterMsLevel(sps, 2)
+ms2
+    
+## or [
+ms2 <- sps[sps$msLevel == 2]
+ms2
+```
+
+
+## The concept of the `MsBackend`
+
+- `MsBackend` classes: store and provide the spectrum data.
+- *Example: `MsBackendMzR`: what data is actually stored?
+```{r}
+slotNames(sps)
+    
+## the backend *provides* the data
+sps@backend
+    
+## what data is actually in memory?
+sps@backend@spectraData
+print(object.size(sps), units = "MB")
+```
+
+- *Example*: change backend to `MsBackendDataFrame`.
+```{r}
+sps <- setBackend(sps, MsBackendDataFrame())
+    
+## what's the size?
+print(object.size(sps), unit = "MB")
+```
+
+- All data is in memory, also m/z and intensity values.
+- Advantage of this?
+  - Separation of data storage logic and spectrum data processing functionality.
+  - Can have backends for differet data types or resources.
+  - Can switch between backends depending on needs: low memory footprint, faster
+    performance ...
+
+
+## `MsBackendHmdb`: import data from HMDB
+
+- Human metabolome database: MS2 spectra available as individual xml file.
+- `MsBackendHmdbXml`: reads data from xml.
+- *Example*: load a subset of MS/MS spectra from HMDB
+```{r}
+library(MsBackendHmdb)
+hmdb <- Spectra(dir("data/hmdb", full.names = TRUE),
+                source = MsBackendHmdbXml())
+hmdb
+```
+
+
+## Match experimental spectrum against HMDB
+
+- **Goal**: match experimental MS2 spectrum against *reference* spectra from the
+  Human Metabolome Database (HMDB).
+- *Example*: identify MS2 spectra with precursor m/z that matches the [M+H]+ ion
+  of Histidine:
+```{r}
+mz_hist <- 156.07675
+ms2_hist <- sps %>%
+    filterMsLevel(2) %>%
+    filterPrecursorMz(mz = mz_hist + ppm(c(-mz_hist, mz_hist), 20))
+ms2_hist
+
+## it's a `Spectra`, even if there is only a single spectrum
+plot(ms2_hist$mz[[1]], ms2_hist$intensity[[1]], type = "h",
+     xlab = "m/z", ylab = "intensity")
+
+## Is the data centroided?
+centroided(ms2_hist) 
+```
+
+- *Example*: do some data manipulations: centroiding and removing low intensity
+  peaks.
+```{r}
+ms2_hist <- ms2_hist %>%
+    pickPeaks() %>%
+    removePeaks(threshold = 500) %>%
+    clean(all = TRUE)
+ms2_hist
+
+plot(ms2_hist$mz[[1]], ms2_hist$intensity[[1]], type = "h",
+     xlab = "m/z", ylab = "intensity") 
+```
+
+- *Example*: match against reference database. 
+```{r}
+res <- compareSpectra(ms2_hist, hmdb, ppm = 40)
+
+head(res)
+
+## Select best matches
+hmdb_hist <- hmdb[res > 0.7]
+hmdb_hist
+
+## plot experimenta against database spectrum
+plot(3, 3, pch = NA, xlim = range(hmdb_hist$mz[[1]], ms2_hist$mz[[1]]),
+     ylim = c(-1, 1), xlab = "m/z", ylab = "intensity")
+abline(h = 0)
+points(hmdb_hist$mz[[1]], hmdb_hist$intensity[[1]], type = "h")
+points(ms2_hist$mz[[1]], -ms2_hist$intensity[[1]] / max(ms2_hist$intensity[[1]]),
+       type = "h")
+```
+
+
+## The future
+
+- Slowly replace `MSnbase` with the new packages.
+- Slowly integrate `Spectra`, `Chromatograms` into `xcms`.
+- New packages should open up possibilities for MS data analysis - specifically
+  aid annotation/identification.
+- Have also a look at the `Spectra` vignette.
+
+
+## Opportunities
+
+- We're open for contributions! See <https://www.rformassspectrometry.org> for
+  more information.
+
+
+### Implement own backends
+
+- [ ] Backend to read/write *mgf* files (Michael Witting?).
+- [ ] Backend to read/write MassBank files (Michael Witting?, Emma Schymanski?).
+
+
+### Plotting functionality
+
+- [ ] plotting functions for `Spectra` objects (base R graphics).
+- [ ] ggplot-based plotting should ideally go into a separate package.
+
+
+### Integrate new packages in your own workflow/software
+
+I'd suggest you switch sooner than later.
+

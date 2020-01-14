@@ -21,7 +21,6 @@ MS2 spectrum against a MS2 library.
 - interactive presentation:
   [spectra_workshop_interactive.org](spectra_workshop_interactive.org).
   
-
 ## Main topics
 
 - What is [RforMassSpectrometry](https://www.rformassspectrometry.org/)?
@@ -34,4 +33,17 @@ MS2 spectrum against a MS2 library.
   - backends to import/work with MGF data, MassBank, ...
   - other things we haven't thought of?
 - How can **you** contribute?
+
+## Installation instructions
+
+To run the examples above a recent version of R is required (>= 3.6.1) and a set
+of packages, which can be installed with the commands below.
+
+```r
+install.packages("BiocManager")
+BiocManager::install(c("remotes", "magrittr", "rmarkdown"))
+BiocManager::install("RforMassSpectrometry/Spectra")
+BiocManager::install("RforMassSpectrometry/MsBackendHmdb")
+BiocManager::install(c("mzR", "BiocStyle"))
+```
 
