@@ -1,4 +1,4 @@
-# #+SETUPFILE: orgsetup.org
+#+SETUPFILE: orgsetup.org
 
 * =Spectra=
 
@@ -90,7 +90,7 @@
 
 ** =MsBackendHmdb=: import data from HMDB
 
-- Human metabolome database: MS2 spectra available as individual xml file.
+- Human Metabolome Database: MS2 spectra available as individual xml files.
 - =MsBackendHmdbXml=: reads data from xml.
 - _Example:_ load a subset of MS/MS spectra from HMDB
   #+begin_src R

@@ -19,8 +19,9 @@ MS2 spectrum against a MS2 library.
   view](https://jorainer.github.io/spectra_workshop/spectra_workshop_static.html).
   
 - interactive presentation:
-  [spectra_workshop_interactive.org](spectra_workshop_interactive.org); *Rmd*
-  version: [spectra_workshop_interactive.Rmd](spectra_workshop_interactive.Rmd).
+  [spectra_workshop_interactive.org](spectra_workshop_interactive.org) (Emacs
+  org-mode file); *Rmd* version:
+  [spectra_workshop_interactive.Rmd](spectra_workshop_interactive.Rmd).
   
 ## Main topics
 

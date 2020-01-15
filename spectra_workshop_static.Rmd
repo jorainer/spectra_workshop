@@ -9,6 +9,7 @@ date: "<font size='2'>
     University Medicine Greifswald, Germany<br>
     <sup>*</sup>order of authors defined by `sample`
 	with a random seed of `42`<br>
+	https://github.com/jorainer/spectra_workshop
     </font>"
 output:
   ioslides_presentation:
@@ -164,6 +165,16 @@ knitr::include_graphics("images/RforMassSpec-explained_03.png")
 
 ## The interactive part
 
+Installation instructions:
+```{r eval = FALSE}
+install.packages("BiocManager")
+BiocManager::install(c("remotes", "magrittr", "rmarkdown"))
+BiocManager::install("RforMassSpectrometry/Spectra")
+BiocManager::install("RforMassSpectrometry/MsBackendHmdb")
+BiocManager::install(c("mzR", "BiocStyle"))
+```
 
+Get the data and code:
 
+`git clone https://github.com/jorainer/spectra_workshop`
 
