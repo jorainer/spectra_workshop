@@ -58,10 +58,12 @@ rmdshot("Spectra.Rmd", "Spectra.pdf")
 knitr::include_graphics("images/R4MassSpec-logo.png")
 ```
 
-- [Initiative](https://www.rformassspectrometry.org) to create a
-  flexible and scalable infrastructure for MS data.
+- Initiative to create a flexible and scalable infrastructure for MS data.
+- Streamline development efforts.
+- Ensure high quality code (documentation, unit tests and code review process).
 - See Laurent Gatto's [poster](https://doi.org/10.5281/zenodo.3565530) for
-  details.
+  details and the [web page](https://www.rformassspectrometry.org) for ways to
+  contribute.
 
 
 ## Status quo
