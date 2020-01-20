@@ -58,8 +58,8 @@ sps$msLevel
 table(sps$msLevel)    
     
 ## m/z and intensity values
-sps$mz
-sps$intensity
+mz(sps)
+intensity(sps)
     
 ## What variables do we have?
 spectraVariables(sps)
@@ -71,6 +71,7 @@ sps$new_variable <- "A"
 
 sps$new_variable
 ```
+- Possibility to add arbitrary annotations to each spectrum.
 
 - *Example*: subset a `Spectra` object:
 ```{r}
@@ -107,8 +108,9 @@ sps <- setBackend(sps, MsBackendDataFrame())
 print(object.size(sps), unit = "MB")
 ```
 
-- All data is in memory, also m/z and intensity values.
-- Advantage of this?
+- With `MsBackendDataFrame`, all data is in memory, also m/z and intensity
+  values.
+- Advantage of the backend concept?
   - Separation of data storage logic and spectrum data processing functionality.
   - Can have backends for differet data types or resources.
   - Can switch between backends depending on needs: low memory footprint, faster
@@ -118,19 +120,22 @@ print(object.size(sps), unit = "MB")
 ## `MsBackendHmdb`: import data from HMDB
 
 - Human metabolome database: MS2 spectra available as individual xml file.
-- `MsBackendHmdbXml`: reads data from xml.
+- `MsBackendHmdbXml`: implemented in its own R package, reads data from xml.
 - *Example*: load a subset of MS/MS spectra from HMDB
 ```{r}
 library(MsBackendHmdb)
 hmdb <- Spectra(dir("data/hmdb", full.names = TRUE),
                 source = MsBackendHmdbXml())
 hmdb
+
+spectraVariables(hmdb)
+head(hmdb$splash)
 ```
 
 
 ## Match experimental spectrum against HMDB
 
-- **Goal**: match experimental MS2 spectrum against *reference* spectra from the
+- *Goal*: match experimental MS2 spectrum against *reference* spectra from the
   Human Metabolome Database (HMDB).
 - *Example*: identify MS2 spectra with precursor m/z that matches the [M+H]+ ion
   of Histidine:
@@ -142,7 +147,7 @@ ms2_hist <- sps %>%
 ms2_hist
 
 ## it's a `Spectra`, even if there is only a single spectrum
-plot(ms2_hist$mz[[1]], ms2_hist$intensity[[1]], type = "h",
+plot(mz(ms2_hist)[[1]], intensity(ms2_hist)[[1]], type = "h",
      xlab = "m/z", ylab = "intensity")
 
 ## Is the data centroided?
@@ -158,7 +163,7 @@ ms2_hist <- ms2_hist %>%
     clean(all = TRUE)
 ms2_hist
 
-plot(ms2_hist$mz[[1]], ms2_hist$intensity[[1]], type = "h",
+plot(mz(ms2_hist)[[1]], intensity(ms2_hist)[[1]], type = "h",
      xlab = "m/z", ylab = "intensity") 
 ```
 
@@ -173,11 +178,12 @@ hmdb_hist <- hmdb[res > 0.7]
 hmdb_hist
 
 ## plot experimenta against database spectrum
-plot(3, 3, pch = NA, xlim = range(hmdb_hist$mz[[1]], ms2_hist$mz[[1]]),
+plot(3, 3, pch = NA, xlim = range(mz(hmdb_hist)[[1]], mz(ms2_hist)[[1]]),
      ylim = c(-1, 1), xlab = "m/z", ylab = "intensity")
 abline(h = 0)
-points(hmdb_hist$mz[[1]], hmdb_hist$intensity[[1]], type = "h")
-points(ms2_hist$mz[[1]], -ms2_hist$intensity[[1]] / max(ms2_hist$intensity[[1]]),
+points(mz(hmdb_hist)[[1]], intensity(hmdb_hist)[[1]], type = "h")
+points(mz(ms2_hist)[[1]], -intensity(ms2_hist)[[1]] /
+                          max(intensity(ms2_hist)[[1]]),
        type = "h")
 ```
 
@@ -186,16 +192,12 @@ points(ms2_hist$mz[[1]], -ms2_hist$intensity[[1]] / max(ms2_hist$intensity[[1]])
 
 - Slowly replace `MSnbase` with the new packages.
 - Slowly integrate `Spectra`, `Chromatograms` into `xcms`.
-- New packages should open up possibilities for MS data analysis - specifically
-  aid annotation/identification.
-- Have also a look at the `Spectra` vignette.
-
+- Looking forward to contributions from the community.
 
 ## Opportunities
 
 - We're open for contributions! See <https://www.rformassspectrometry.org> for
   more information.
-
 
 ### Implement own backends
 

@@ -3,6 +3,8 @@
 * =Spectra=
 
 - Example use cases for the =Spectra= package and functionality.
+- Evaluate R code from the /spectra_workshop_interactive.Rmd/ file - or watch me
+  doing that.
 
 ** Import data from an /mzML/ file
 
@@ -37,8 +39,8 @@
     table(sps$msLevel)    
 
     ## m/z and intensity values
-    sps$mz
-    sps$intensity
+    mz(sps)
+    intensity(sps)
 
     ## What variables do we have?
     spectraVariables(sps)
@@ -48,6 +50,8 @@
     sps$new_variable <- "A"
 
     sps$new_variable
+
+    ## Possibility to add arbitrary annotations to each spectrum
   #+end_src
 - _Example_: subset a =Spectra= object:
   #+begin_src R
@@ -76,13 +80,19 @@
   #+end_src
 - _Example_: change backend to =MsBackendDataFrame=.
   #+begin_src R
+    ## Change backend: load data into memory
     sps <- setBackend(sps, MsBackendDataFrame())
 
     ## what's the size?
     print(object.size(sps), unit = "MB")
+
+    ## access to m/z and intensity values is faster
+    mz(sps)
+    intensity(sps)
+
   #+end_src
 - All data is in memory, also m/z and intensity values.
-- Advantage of this?
+- Advantage of the backend concept?
   - Separation of data storage logic and spectrum data processing functionality.
   - Can have backends for differet data types or resources.
   - Can switch between backends depending on needs: low memory footprint, faster
@@ -91,13 +101,16 @@
 ** =MsBackendHmdb=: import data from HMDB
 
 - Human Metabolome Database: MS2 spectra available as individual xml files.
-- =MsBackendHmdbXml=: reads data from xml.
+- =MsBackendHmdbXml=: implemented in its own R package, reads data from xml.
 - _Example:_ load a subset of MS/MS spectra from HMDB
   #+begin_src R
     library(MsBackendHmdb)
     hmdb <- Spectra(dir("data/hmdb", full.names = TRUE),
-		    source = MsBackendHmdbXml())
+                    source = MsBackendHmdbXml())
     hmdb
+
+    spectraVariables(hmdb)
+    hmdb$splash
   #+end_src
 
 ** Match experimental spectrum against HMDB
@@ -109,13 +122,13 @@
   #+begin_src R
     mz_hist <- 156.07675
     ms2_hist <- sps %>%
-	filterMsLevel(2) %>%
-	filterPrecursorMz(mz = mz_hist + ppm(c(-mz_hist, mz_hist), 20))
+        filterMsLevel(2) %>%
+        filterPrecursorMz(mz = mz_hist + ppm(c(-mz_hist, mz_hist), 20))
     ms2_hist
 
     ## it's a `Spectra`, even if there is only a single spectrum
-    plot(ms2_hist$mz[[1]], ms2_hist$intensity[[1]], type = "h",
-	 xlab = "m/z", ylab = "intensity")
+    plot(mz(ms2_hist)[[1]], intensity(ms2_hist)[[1]], type = "h",
+         xlab = "m/z", ylab = "intensity")
 
     ## Is the data centroided?
     centroided(ms2_hist)
@@ -124,13 +137,14 @@
   peaks.
   #+begin_src R
     ms2_hist <- ms2_hist %>%
-	pickPeaks() %>%
-	removePeaks(threshold = 500) %>%
-	clean(all = TRUE)
+        pickPeaks() %>%
+        removePeaks(threshold = 500) %>%
+        clean(all = TRUE)
     ms2_hist
+    lengths(ms2_hist)
 
-    plot(ms2_hist$mz[[1]], ms2_hist$intensity[[1]], type = "h",
-	 xlab = "m/z", ylab = "intensity")
+    plot(mz(ms2_hist)[[1]], intensity(ms2_hist)[[1]], type = "h",
+         xlab = "m/z", ylab = "intensity")
   #+end_src
 - _Example_: match against reference database.
   #+begin_src R
@@ -143,21 +157,20 @@
     hmdb_hist
 
     ## plot experimenta against database spectrum
-    plot(3, 3, pch = NA, xlim = range(hmdb_hist$mz[[1]], ms2_hist$mz[[1]]),
-	 ylim = c(-1, 1), xlab = "m/z", ylab = "intensity")
+    plot(3, 3, pch = NA, xlim = range(mz(hmdb_hist)[[1]], mz(ms2_hist)[[1]]),
+         ylim = c(-1, 1), xlab = "m/z", ylab = "intensity")
     abline(h = 0)
-    points(hmdb_hist$mz[[1]], hmdb_hist$intensity[[1]], type = "h")
-    points(ms2_hist$mz[[1]], -ms2_hist$intensity[[1]] / max(ms2_hist$intensity[[1]]),
-	   type = "h")
+    points(mz(hmdb_hist)[[1]], intensity(hmdb_hist)[[1]], type = "h")
+    points(mz(ms2_hist)[[1]], - intensity(ms2_hist)[[1]] /
+                              max(intensity(ms2_hist)[[1]]),
+           type = "h")
   #+end_src
 
 ** The future
 
 - Slowly replace =MSnbase= with the new packages.
 - Slowly integrate =Spectra=, =Chromatograms= into =xcms=.
-- New packages should open up possibilities for MS data analysis - specifically
-  aid annotation/identification.
-- Have also a look at the =Spectra= vignette.
+- Looking forward to contributions from the community.
 
 ** Opportunities
 
@@ -174,6 +187,6 @@
 - [ ] plotting functions for =Spectra= objects (base R graphics).
 - [ ] ggplot-based plotting should ideally go into a separate package.
 
-*** Integrate new packages in your own workflow/software
+*** Integrate new packages into your own workflow/software
 
 I'd suggest you switch sooner than later.

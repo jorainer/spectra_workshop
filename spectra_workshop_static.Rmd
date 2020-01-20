@@ -158,7 +158,7 @@ knitr::include_graphics("images/Backends_04.png")
   SQL-based, ...).
 </div>
 
-## The whole picture
+## The full picture
 
 ```{r out.width = "700px", echo = FALSE}
 knitr::include_graphics("images/RforMassSpec-explained_03.png")
